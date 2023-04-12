@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../daily_lunch/daily_lunch_screen.dart';
+import 'card_button.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -18,28 +19,37 @@ class HomeScreen extends StatelessWidget {
         crossAxisSpacing: 10.0,
         mainAxisSpacing: 10.0,
         children: [
-          Container(
-            padding: const EdgeInsets.all(10.0),
-            color: Colors.purple[100],
-            child: TextButton(
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const DailyLunchScreen(),
-                ),
+          CardButton(
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const DailyLunchScreen(),
               ),
-              child: const Text("Ica Maxi Daily Lunch"),
             ),
+            text: "Ica Maxi Daily Lunch",
+            icon: Icons.food_bank,
           ),
-          Container(
-            padding: const EdgeInsets.all(10.0),
-            color: Colors.purple[200],
-            child: const Text("Kaffson"),
+          CardButton(
+            onPressed: null,
+            // onPressed: () => Navigator.push(
+            //   context,
+            //   MaterialPageRoute(
+            //     builder: (context) => const KaffsonScreen(),
+            //   ),
+            // ),
+            text: "Kaffson",
+            icon: Icons.coffee_maker,
           ),
-          Container(
-            padding: const EdgeInsets.all(10.0),
-            color: Colors.purple[300],
-            child: const Text("Events"),
+          CardButton(
+            onPressed: null,
+            // onPressed: () => Navigator.push(
+            //   context,
+            //   MaterialPageRoute(
+            //     builder: (context) => const EventsScreen(),
+            //   ),
+            // ),
+            text: "Events",
+            icon: Icons.event,
           ),
         ],
       ),
