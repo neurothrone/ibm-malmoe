@@ -12,6 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # https://pub.dev/packages/http
+  http: ^0.13.5
+  # https://pub.dev/packages/html
+  html: ^0.15.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
