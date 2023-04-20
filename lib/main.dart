@@ -16,7 +16,9 @@ class MyApp extends StatelessWidget {
       title: "IBM Malmoe",
       theme: ThemeData(
         // primarySwatch: Colors.deepPurple,
+        useMaterial3: true,
         appBarTheme: const AppBarTheme(
+          foregroundColor: Colors.white,
           backgroundColor: Colors.deepPurple,
         ),
       ),
