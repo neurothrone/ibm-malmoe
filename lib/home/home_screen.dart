@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../daily_lunch/daily_lunch_screen.dart';
+import '../kaffson/kaffson_screen.dart';
 import 'card_button.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,7 +11,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("IBM Malmoe"),
+        centerTitle: true,
+        title: const Text(
+          "IBM Malmoe",
+        ),
       ),
       body: GridView.count(
         primary: false,
@@ -30,17 +34,16 @@ class HomeScreen extends StatelessWidget {
             icon: Icons.food_bank,
           ),
           CardButton(
-            onPressed: null,
-            // onPressed: () => Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //     builder: (context) => const KaffsonScreen(),
-            //   ),
-            // ),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const KaffsonScreen(),
+              ),
+            ),
             text: "Kaffson",
             icon: Icons.coffee_maker,
           ),
-          CardButton(
+          const CardButton(
             onPressed: null,
             // onPressed: () => Navigator.push(
             //   context,
