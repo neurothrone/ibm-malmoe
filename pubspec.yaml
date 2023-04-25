@@ -12,12 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # https://pub.dev/packages/http
   http: ^0.13.5
-  # https://pub.dev/packages/html
   html: ^0.15.2
   firebase_core: ^2.10.0
   firebase_auth: ^4.4.2
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:
