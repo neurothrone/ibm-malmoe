@@ -7,17 +7,12 @@ import 'package:html/dom.dart' as dom;
 const icaMaxiWeeklyMenuUrl =
     "https://www.ica.se/butiker/maxi/malmo/maxi-ica-stormarknad-vastra-hamnen-11981/butiken/veckans-matsedel/";
 
-class DailyLunchScreen extends StatelessWidget {
-  const DailyLunchScreen({Key? key}) : super(key: key);
+class TodaysLunchScreen extends StatelessWidget {
+  const TodaysLunchScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Today's Lunch"),
-      ),
-      body: const WeeklyMenu(),
-    );
+    return const WeeklyMenu();
   }
 }
 
