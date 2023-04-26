@@ -1,37 +1,37 @@
 {
   "project_info": {
-    "project_number": "573734154376",
-    "project_id": "ibm-malmoe",
-    "storage_bucket": "ibm-malmoe.appspot.com"
+    "project_number": "90299973757",
+    "project_id": "ibm-malmoe-4166b",
+    "storage_bucket": "ibm-malmoe-4166b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:573734154376:android:605f2e2d154eef6edfef3d",
+        "mobilesdk_app_id": "1:90299973757:android:1084a455da02b15eabb114",
         "android_client_info": {
           "package_name": "tech.neurothrone.ibm_malmoe"
         }
       },
       "oauth_client": [
         {
-          "client_id": "573734154376-36d5tjftgu7u9uvfnqetqta49u73mkf1.apps.googleusercontent.com",
+          "client_id": "90299973757-b0qtraqkii8hvb1f02p64npotcho4q1j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAHwPTl8kUY0PiMDfmOMsMbvHsWpL_Bdd0"
+          "current_key": "AIzaSyDQ3q9HrFn_EYBInNXEOzBFj8mw2-ApSmg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "573734154376-36d5tjftgu7u9uvfnqetqta49u73mkf1.apps.googleusercontent.com",
+              "client_id": "90299973757-b0qtraqkii8hvb1f02p64npotcho4q1j.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "573734154376-i4sgcj7kdsg9rirdckuoijcq1ehabl1a.apps.googleusercontent.com",
+              "client_id": "90299973757-b092p8eo9n8oe2o577k5fsr3dpvl6rkl.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "tech.neurothrone.ibmMalmoe"
