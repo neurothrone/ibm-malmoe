@@ -14,7 +14,7 @@ class DailyLunchScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Daily Lunch at Ica Maxi"),
+        title: const Text("Today's Lunch"),
       ),
       body: const WeeklyMenu(),
     );

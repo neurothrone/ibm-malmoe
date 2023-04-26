@@ -44,39 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC9MROkiWEzhvJwyKeegXdLlwgXMBDhfb8',
-    appId: '1:573734154376:web:c6f8486d44bd4b63dfef3d',
-    messagingSenderId: '573734154376',
-    projectId: 'ibm-malmoe',
-    authDomain: 'ibm-malmoe.firebaseapp.com',
-    storageBucket: 'ibm-malmoe.appspot.com',
+    apiKey: 'AIzaSyC11pDYCD9gaPxH76B__zMjJOfXVztmoTA',
+    appId: '1:90299973757:web:6e2a28ea1d33e3b1abb114',
+    messagingSenderId: '90299973757',
+    projectId: 'ibm-malmoe-4166b',
+    authDomain: 'ibm-malmoe-4166b.firebaseapp.com',
+    storageBucket: 'ibm-malmoe-4166b.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAHwPTl8kUY0PiMDfmOMsMbvHsWpL_Bdd0',
-    appId: '1:573734154376:android:605f2e2d154eef6edfef3d',
-    messagingSenderId: '573734154376',
-    projectId: 'ibm-malmoe',
-    storageBucket: 'ibm-malmoe.appspot.com',
+    apiKey: 'AIzaSyDQ3q9HrFn_EYBInNXEOzBFj8mw2-ApSmg',
+    appId: '1:90299973757:android:1084a455da02b15eabb114',
+    messagingSenderId: '90299973757',
+    projectId: 'ibm-malmoe-4166b',
+    storageBucket: 'ibm-malmoe-4166b.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCthdZXlx82-NVlJZZln-mp6bJrmTGdZA0',
-    appId: '1:573734154376:ios:f8eb6a9197bbfb0cdfef3d',
-    messagingSenderId: '573734154376',
-    projectId: 'ibm-malmoe',
-    storageBucket: 'ibm-malmoe.appspot.com',
-    iosClientId: '573734154376-i4sgcj7kdsg9rirdckuoijcq1ehabl1a.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDSL4nNFa4_KJhgJbvEln5Iw9lUWiPDpxI',
+    appId: '1:90299973757:ios:86c1b6f3ef556069abb114',
+    messagingSenderId: '90299973757',
+    projectId: 'ibm-malmoe-4166b',
+    storageBucket: 'ibm-malmoe-4166b.appspot.com',
+    iosClientId: '90299973757-b092p8eo9n8oe2o577k5fsr3dpvl6rkl.apps.googleusercontent.com',
     iosBundleId: 'tech.neurothrone.ibmMalmoe',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCthdZXlx82-NVlJZZln-mp6bJrmTGdZA0',
-    appId: '1:573734154376:ios:f8eb6a9197bbfb0cdfef3d',
-    messagingSenderId: '573734154376',
-    projectId: 'ibm-malmoe',
-    storageBucket: 'ibm-malmoe.appspot.com',
-    iosClientId: '573734154376-i4sgcj7kdsg9rirdckuoijcq1ehabl1a.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDSL4nNFa4_KJhgJbvEln5Iw9lUWiPDpxI',
+    appId: '1:90299973757:ios:86c1b6f3ef556069abb114',
+    messagingSenderId: '90299973757',
+    projectId: 'ibm-malmoe-4166b',
+    storageBucket: 'ibm-malmoe-4166b.appspot.com',
+    iosClientId: '90299973757-b092p8eo9n8oe2o577k5fsr3dpvl6rkl.apps.googleusercontent.com',
     iosBundleId: 'tech.neurothrone.ibmMalmoe',
   );
 }
