@@ -97,9 +97,20 @@ class _AuthScreenState extends State<AuthScreen> {
                           _isOnSignIn ? "Sign in" : "Register",
                         ),
                 ),
-                TextButton(
-                  onPressed: () => setState(() => _isOnSignIn = !_isOnSignIn),
-                  child: Text(_isOnSignIn ? "Register?" : "Sign in?"),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      _isOnSignIn
+                          ? "Already have an account?"
+                          : "Don't have an account?",
+                    ),
+                    TextButton(
+                      onPressed: () =>
+                          setState(() => _isOnSignIn = !_isOnSignIn),
+                      child: Text(_isOnSignIn ? "Register" : "Sign in"),
+                    ),
+                  ],
                 ),
               ],
             ),
