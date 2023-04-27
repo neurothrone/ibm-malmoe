@@ -26,20 +26,23 @@ enum FirebaseAuthError {
   }
 }
 
+// TODO: Refactor to DI
 class AuthService {
+  // Private constructor: there should only be one instance of this class
   AuthService._();
 
   static final shared = AuthService._();
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  Stream<User?> authStateChanges() => FirebaseAuth.instance.authStateChanges();
+  Stream<User?> authStateChanges() => _auth.authStateChanges();
 
   Future<String?> register({
     required String email,
     required String password,
   }) async {
     try {
+      // TODO: do something with user or remove variable
       final user = await _auth.createUserWithEmailAndPassword(
         email: email,
         password: password,
@@ -62,6 +65,7 @@ class AuthService {
     required String password,
   }) async {
     try {
+      // TODO: do something with user or remove variable
       final user = await _auth.signInWithEmailAndPassword(
         email: email,
         password: password,
@@ -79,7 +83,5 @@ class AuthService {
     return null;
   }
 
-  Future<void> signOut() async {
-    await FirebaseAuth.instance.signOut();
-  }
+  Future<void> signOut() async => await _auth.signOut();
 }
