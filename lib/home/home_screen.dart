@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 
 import '../app_state.dart';
 import '../navigation/destination.dart';
-import 'card_button.dart';
+import 'primary_card_button.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -18,19 +18,19 @@ class HomeScreen extends StatelessWidget {
       crossAxisSpacing: 10.0,
       mainAxisSpacing: 10.0,
       children: [
-        CardButton(
+        PrimaryCardButton(
           onPressed: () =>
               context.read<AppState>().navigateTo(Destination.kaffson),
           text: "Kaffson",
           icon: Icons.coffee_maker,
         ),
-        CardButton(
+        PrimaryCardButton(
           onPressed: () =>
               context.read<AppState>().navigateTo(Destination.todaysLunch),
           text: "Today's Lunch",
           icon: Icons.food_bank,
         ),
-        const CardButton(
+        const PrimaryCardButton(
           onPressed: null,
           // onPressed: () => context.read<AppState>().navigateTo(Destination.events),
           text: "Events",
