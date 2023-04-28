@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 // region Universal
 
+const appTitle = "IBM Malmoe";
+
 // Button
 const buttonPrimaryBackgroundColor = Color(0xff0f62fe);
 const buttonPrimaryForegroundColor = Color(0xfff4f4f4);
