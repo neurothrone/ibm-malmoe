@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'auth/auth_service.dart';
 import 'navigation/destination.dart';
 
 const isDarkModeKey = "isDarkMode";
@@ -34,5 +35,11 @@ class AppState extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     prefs.setBool(isDarkModeKey, _isDarkMode);
     notifyListeners();
+  }
+
+  void logOut() {
+    // When the user logs back in at a later point navigate them to the home screen
+    _currentDestination = Destination.home;
+    AuthService.shared.signOut();
   }
 }

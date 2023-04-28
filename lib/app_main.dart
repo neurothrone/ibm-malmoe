@@ -71,7 +71,7 @@ class AppMain extends StatelessWidget {
         appState.navigateTo(Destination.settings);
         break;
       case PopupMenuAction.logout:
-        AuthService.shared.signOut();
+        appState.logOut();
         break;
     }
   }
