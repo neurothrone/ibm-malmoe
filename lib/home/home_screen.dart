@@ -11,32 +11,34 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      primary: false,
-      padding: const EdgeInsets.all(10.0),
-      crossAxisCount: 2,
-      crossAxisSpacing: 10.0,
-      mainAxisSpacing: 10.0,
-      children: [
-        PrimaryCardButton(
-          onPressed: () =>
-              context.read<AppState>().navigateTo(Destination.kaffson),
-          text: "Kaffson",
-          icon: Icons.coffee_maker,
-        ),
-        PrimaryCardButton(
-          onPressed: () =>
-              context.read<AppState>().navigateTo(Destination.todaysLunch),
-          text: "Today's Lunch",
-          icon: Icons.food_bank,
-        ),
-        const PrimaryCardButton(
-          onPressed: null,
-          // onPressed: () => context.read<AppState>().navigateTo(Destination.events),
-          text: "Events",
-          icon: Icons.event,
-        ),
-      ],
+    return Consumer<AppState>(
+      builder: (context, AppState appState, child) {
+        return GridView.count(
+          primary: false,
+          padding: const EdgeInsets.all(10.0),
+          crossAxisCount: 2,
+          crossAxisSpacing: 10.0,
+          mainAxisSpacing: 10.0,
+          children: [
+            PrimaryCardButton(
+              onPressed: () => appState.navigateTo(Destination.kaffson),
+              text: "Kaffson",
+              icon: Icons.coffee_maker,
+            ),
+            PrimaryCardButton(
+              onPressed: () => appState.navigateTo(Destination.todaysLunch),
+              text: "Today's Lunch",
+              icon: Icons.food_bank,
+            ),
+            const PrimaryCardButton(
+              onPressed: null,
+              // onPressed: () => appState.navigateTo(Destination.events),
+              text: "Events",
+              icon: Icons.event,
+            ),
+          ],
+        );
+      },
     );
   }
 }
