@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 import 'auth_service.dart';
 
+// TODO: Show snackbar when failing to log out with appropriate message
+
 class AuthScreen extends StatefulWidget {
   const AuthScreen({Key? key}) : super(key: key);
 
