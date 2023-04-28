@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../../core/constants.dart';
 import 'auth_service.dart';
 
 // TODO: Show snackbar when failing to log out with appropriate message

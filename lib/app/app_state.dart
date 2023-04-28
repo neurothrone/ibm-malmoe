@@ -2,8 +2,8 @@ import 'package:flutter/foundation.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'auth/auth_service.dart';
-import 'navigation/destination.dart';
+import '../features/auth/auth_service.dart';
+import 'components/destination.dart';
 
 const isDarkModeKey = "isDarkMode";
 

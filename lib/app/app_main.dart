@@ -5,9 +5,9 @@ import 'package:provider/provider.dart';
 
 import 'app_scaffold.dart';
 import 'app_state.dart';
-import 'auth/auth_service.dart';
-import 'auth/auth_screen.dart';
-import 'constants.dart';
+import '../features/auth/auth_service.dart';
+import '../features/auth/auth_screen.dart';
+import '../core/constants.dart';
 
 class AppMain extends StatelessWidget {
   const AppMain({super.key});

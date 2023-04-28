@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
 
-import '../app_state.dart';
-import '../navigation/destination.dart';
-import 'primary_card_button.dart';
+import '../../app/app_state.dart';
+import '../../app/components/destination.dart';
+import 'components/primary_card_button.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

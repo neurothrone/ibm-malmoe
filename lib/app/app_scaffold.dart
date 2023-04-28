@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'app_state.dart';
-import 'events/events_screen.dart';
-import 'home/custom_popup_menu.dart';
-import 'home/home_screen.dart';
-import 'home/popup_menu_action.dart';
-import 'kaffson/kaffson_screen.dart';
-import 'navigation/destination.dart';
-import 'settings/settings_screen.dart';
-import 'todays_lunch/todays_lunch_screen.dart';
+import 'components/destination.dart';
+import 'components/custom_popup_menu.dart';
+import 'components/popup_menu_action.dart';
+import '../features/events/events_screen.dart';
+import '../features/home/home_screen.dart';
+import '../features/kaffson/kaffson_screen.dart';
+import '../features/settings/settings_screen.dart';
+import '../features/todays_lunch/todays_lunch_screen.dart';
 
 class AppScaffold extends StatelessWidget {
   const AppScaffold({Key? key}) : super(key: key);
