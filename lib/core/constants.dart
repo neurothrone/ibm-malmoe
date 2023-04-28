@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// TODO: Constants can be put into separate files to improve developer experience
+
 // region Universal
 
 const appTitle = "IBM Malmoe";
