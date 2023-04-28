@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../constants.dart';
 import 'auth_service.dart';
 
 class AuthScreen extends StatefulWidget {
@@ -82,19 +83,22 @@ class _AuthScreenState extends State<AuthScreen> {
                 ElevatedButton(
                   onPressed: _handleSubmit,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.black,
+                    backgroundColor: buttonPrimaryBackgroundColor,
                   ),
                   child: _isLoading
                       ? const SizedBox(
                           width: 20.0,
                           height: 20.0,
                           child: CircularProgressIndicator(
-                            color: Colors.white,
+                            color: buttonPrimaryForegroundColor,
                             strokeWidth: 2,
                           ),
                         )
                       : Text(
                           _isOnSignIn ? "Sign in" : "Register",
+                          style: const TextStyle(
+                            color: buttonPrimaryForegroundColor,
+                          ),
                         ),
                 ),
                 Row(
@@ -108,7 +112,12 @@ class _AuthScreenState extends State<AuthScreen> {
                     TextButton(
                       onPressed: () =>
                           setState(() => _isOnSignIn = !_isOnSignIn),
-                      child: Text(_isOnSignIn ? "Register" : "Sign in"),
+                      child: Text(
+                        _isOnSignIn ? "Register" : "Sign in",
+                        style: const TextStyle(
+                          color: buttonPrimaryBackgroundColor,
+                        ),
+                      ),
                     ),
                   ],
                 ),
