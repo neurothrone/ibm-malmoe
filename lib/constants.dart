@@ -76,6 +76,20 @@ ThemeData _darkTheme(BuildContext context) {
       elevation: 5.0,
       iconTheme: IconThemeData(color: darkIconPrimary),
     ),
+    popupMenuTheme: const PopupMenuThemeData(
+      color: darkBackground,
+    ),
+    inputDecorationTheme: const InputDecorationTheme(
+      hintStyle: TextStyle(
+        color: darkTextPlaceholder,
+      ),
+    ),
+    iconTheme: const IconThemeData(
+      color: darkIconPrimary,
+    ),
+    listTileTheme: const ListTileThemeData(
+      iconColor: darkIconPrimary,
+    ),
     textTheme: Theme.of(context)
         .textTheme
         .copyWith(
@@ -86,12 +100,6 @@ ThemeData _darkTheme(BuildContext context) {
           bodyColor: Colors.white,
           displayColor: Colors.grey,
         ),
-    // switchTheme: SwitchThemeData(
-    //   thumbColor: MaterialStateProperty.all(Colors.orange),
-    // ),
-    // listTileTheme: const ListTileThemeData(
-    //   iconColor: Colors.orange,
-    // ),
   );
 }
 
@@ -104,7 +112,21 @@ ThemeData _lightTheme(BuildContext context) {
       backgroundColor: lightLayerBackground,
       foregroundColor: lightTextPrimary,
       elevation: 5.0,
-      iconTheme: IconThemeData(color: Colors.black54),
+      iconTheme: IconThemeData(color: lightIconPrimary),
+    ),
+    popupMenuTheme: const PopupMenuThemeData(
+      color: lightBackground,
+    ),
+    inputDecorationTheme: const InputDecorationTheme(
+      hintStyle: TextStyle(
+        color: lightTextPlaceholder,
+      ),
+    ),
+    iconTheme: const IconThemeData(
+      color: lightIconPrimary,
+    ),
+    listTileTheme: const ListTileThemeData(
+      iconColor: lightIconPrimary,
     ),
     textTheme: Theme.of(context)
         .textTheme
@@ -118,11 +140,5 @@ ThemeData _lightTheme(BuildContext context) {
           bodyColor: Colors.black,
           displayColor: Colors.grey,
         ),
-    // switchTheme: SwitchThemeData(
-    //   thumbColor: MaterialStateProperty.all(Colors.purple),
-    // ),
-    // listTileTheme: const ListTileThemeData(
-    //   iconColor: Colors.purple,
-    // ),
   );
 }
