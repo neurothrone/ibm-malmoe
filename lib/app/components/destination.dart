@@ -1,5 +1,6 @@
 enum Destination {
   home("Home"),
+  profile("Profile"),
   settings("Settings"),
   kaffson("Kaffson"),
   todaysLunch("Today's Lunch"),
