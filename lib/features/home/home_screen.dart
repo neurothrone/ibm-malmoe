@@ -15,10 +15,10 @@ class HomeScreen extends StatelessWidget {
       builder: (context, AppState appState, child) {
         return GridView.count(
           primary: false,
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(20.0),
           crossAxisCount: 2,
-          crossAxisSpacing: 10.0,
-          mainAxisSpacing: 10.0,
+          crossAxisSpacing: 20.0,
+          mainAxisSpacing: 20.0,
           children: [
             PrimaryCardButton(
               onPressed: () => appState.navigateTo(Destination.kaffson),
