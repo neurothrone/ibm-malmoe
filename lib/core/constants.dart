@@ -104,6 +104,20 @@ ThemeData _darkTheme(BuildContext context) {
           bodyColor: Colors.white,
           displayColor: Colors.grey,
         ),
+    dialogTheme: const DialogTheme(
+      backgroundColor: darkBackground,
+      shadowColor: darkLayerBackground,
+      elevation: 2.0,
+      titleTextStyle: TextStyle(
+        color: darkTextPrimary,
+        fontSize: 22.0,
+        fontWeight: FontWeight.bold,
+      ),
+      contentTextStyle: TextStyle(
+        color: darkTextPrimary,
+      ),
+      actionsPadding: EdgeInsets.all(15.0),
+    ),
   );
 }
 
@@ -144,5 +158,19 @@ ThemeData _lightTheme(BuildContext context) {
           bodyColor: Colors.black,
           displayColor: Colors.grey,
         ),
+    dialogTheme: const DialogTheme(
+      backgroundColor: lightBackground,
+      shadowColor: lightLayerBackground,
+      elevation: 2.0,
+      titleTextStyle: TextStyle(
+        color: lightTextPrimary,
+        fontSize: 22.0,
+        fontWeight: FontWeight.bold,
+      ),
+      contentTextStyle: TextStyle(
+        color: lightTextPrimary,
+      ),
+      actionsPadding: EdgeInsets.all(15.0),
+    ),
   );
 }
