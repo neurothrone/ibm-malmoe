@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import '../../core/constants.dart';
 import 'auth_service.dart';
 
-// TODO: Show snackbar when failing to log out with appropriate message
-
 class AuthScreen extends StatefulWidget {
   const AuthScreen({Key? key}) : super(key: key);
 
@@ -13,7 +11,7 @@ class AuthScreen extends StatefulWidget {
 }
 
 class _AuthScreenState extends State<AuthScreen> {
-  bool _isOnSignIn = true;
+  bool _isSigningIn = true;
   bool _isLoading = false;
 
   // Required to validate user input
@@ -34,7 +32,7 @@ class _AuthScreenState extends State<AuthScreen> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                  _isOnSignIn ? "Sign in" : "Register",
+                  _isSigningIn ? "Sign in" : "Register",
                   style: const TextStyle(
                     fontSize: 24.0,
                     fontWeight: FontWeight.w800,
@@ -97,7 +95,7 @@ class _AuthScreenState extends State<AuthScreen> {
                           ),
                         )
                       : Text(
-                          _isOnSignIn ? "Sign in" : "Register",
+                          _isSigningIn ? "Sign in" : "Register",
                           style: const TextStyle(
                             color: buttonPrimaryForegroundColor,
                           ),
@@ -107,15 +105,15 @@ class _AuthScreenState extends State<AuthScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      _isOnSignIn
+                      _isSigningIn
                           ? "Already have an account?"
                           : "Don't have an account?",
                     ),
                     TextButton(
                       onPressed: () =>
-                          setState(() => _isOnSignIn = !_isOnSignIn),
+                          setState(() => _isSigningIn = !_isSigningIn),
                       child: Text(
-                        _isOnSignIn ? "Register" : "Sign in",
+                        _isSigningIn ? "Register" : "Sign in",
                         style: const TextStyle(
                           color: buttonPrimaryBackgroundColor,
                         ),
@@ -139,10 +137,16 @@ class _AuthScreenState extends State<AuthScreen> {
 
     setState(() => _isLoading = true);
 
-    if (_isOnSignIn) {
-      await AuthService.shared.signIn(email: email, password: password);
-    } else {
-      await AuthService.shared.register(email: email, password: password);
+    final String? errorMessage = _isSigningIn
+        ? await AuthService.shared.signIn(email: email, password: password)
+        : await AuthService.shared.register(email: email, password: password);
+
+    if (errorMessage != null && context.mounted) {
+      // TODO: Style snackbar
+      final snackBar = SnackBar(
+        content: Text(errorMessage),
+      );
+      ScaffoldMessenger.of(context).showSnackBar(snackBar);
     }
 
     setState(() => _isLoading = false);
