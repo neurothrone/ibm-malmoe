@@ -44,39 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC11pDYCD9gaPxH76B__zMjJOfXVztmoTA',
-    appId: '1:90299973757:web:6e2a28ea1d33e3b1abb114',
-    messagingSenderId: '90299973757',
-    projectId: 'ibm-malmoe-4166b',
-    authDomain: 'ibm-malmoe-4166b.firebaseapp.com',
-    storageBucket: 'ibm-malmoe-4166b.appspot.com',
+    apiKey: 'AIzaSyD-MY7_ondpwTpxcFerYBnl2DN0VhSGvRk',
+    appId: '1:587424333588:web:a688e7a8cf9a7a7a214c01',
+    messagingSenderId: '587424333588',
+    projectId: 'ibm-malmoe-30b69',
+    authDomain: 'ibm-malmoe-30b69.firebaseapp.com',
+    storageBucket: 'ibm-malmoe-30b69.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDQ3q9HrFn_EYBInNXEOzBFj8mw2-ApSmg',
-    appId: '1:90299973757:android:1084a455da02b15eabb114',
-    messagingSenderId: '90299973757',
-    projectId: 'ibm-malmoe-4166b',
-    storageBucket: 'ibm-malmoe-4166b.appspot.com',
+    apiKey: 'AIzaSyAKsIChWQj9ERz3DPQuRyxQVFRReq_qWAQ',
+    appId: '1:587424333588:android:81dc5ba795edce79214c01',
+    messagingSenderId: '587424333588',
+    projectId: 'ibm-malmoe-30b69',
+    storageBucket: 'ibm-malmoe-30b69.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDSL4nNFa4_KJhgJbvEln5Iw9lUWiPDpxI',
-    appId: '1:90299973757:ios:86c1b6f3ef556069abb114',
-    messagingSenderId: '90299973757',
-    projectId: 'ibm-malmoe-4166b',
-    storageBucket: 'ibm-malmoe-4166b.appspot.com',
-    iosClientId: '90299973757-b092p8eo9n8oe2o577k5fsr3dpvl6rkl.apps.googleusercontent.com',
+    apiKey: 'AIzaSyD3hyDIksdAasIZm51XvQXTM6w1fnGjwpQ',
+    appId: '1:587424333588:ios:297537bb2c2a6cb3214c01',
+    messagingSenderId: '587424333588',
+    projectId: 'ibm-malmoe-30b69',
+    storageBucket: 'ibm-malmoe-30b69.appspot.com',
+    iosClientId: '587424333588-nkjf1qq25cvsdll5a2faavki24dtsuip.apps.googleusercontent.com',
     iosBundleId: 'tech.neurothrone.ibmMalmoe',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDSL4nNFa4_KJhgJbvEln5Iw9lUWiPDpxI',
-    appId: '1:90299973757:ios:86c1b6f3ef556069abb114',
-    messagingSenderId: '90299973757',
-    projectId: 'ibm-malmoe-4166b',
-    storageBucket: 'ibm-malmoe-4166b.appspot.com',
-    iosClientId: '90299973757-b092p8eo9n8oe2o577k5fsr3dpvl6rkl.apps.googleusercontent.com',
+    apiKey: 'AIzaSyD3hyDIksdAasIZm51XvQXTM6w1fnGjwpQ',
+    appId: '1:587424333588:ios:297537bb2c2a6cb3214c01',
+    messagingSenderId: '587424333588',
+    projectId: 'ibm-malmoe-30b69',
+    storageBucket: 'ibm-malmoe-30b69.appspot.com',
+    iosClientId: '587424333588-nkjf1qq25cvsdll5a2faavki24dtsuip.apps.googleusercontent.com',
     iosBundleId: 'tech.neurothrone.ibmMalmoe',
   );
 }
