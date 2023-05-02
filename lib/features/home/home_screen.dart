@@ -30,12 +30,6 @@ class HomeScreen extends StatelessWidget {
               text: "Today's Lunch",
               icon: Icons.food_bank,
             ),
-            const PrimaryCardButton(
-              onPressed: null,
-              // onPressed: () => appState.navigateTo(Destination.events),
-              text: "Events",
-              icon: Icons.event,
-            ),
           ],
         );
       },

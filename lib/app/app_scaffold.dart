@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../features/profile/profile_screen.dart';
-import '../features/events/events_screen.dart';
 import '../features/home/home_screen.dart';
 import '../features/kaffson/kaffson_screen.dart';
 import '../features/settings/settings_screen.dart';
@@ -88,8 +87,6 @@ extension ScaffoldBody on Destination {
         return const KaffsonScreen();
       case Destination.todaysLunch:
         return const TodaysLunchScreen();
-      case Destination.events:
-        return const EventsScreen();
     }
   }
 }
