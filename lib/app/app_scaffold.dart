@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../features/profile/profile_screen.dart';
-import 'app_state.dart';
-import 'components/destination.dart';
-import 'components/custom_popup_menu.dart';
-import 'components/popup_menu_action.dart';
 import '../features/events/events_screen.dart';
 import '../features/home/home_screen.dart';
 import '../features/kaffson/kaffson_screen.dart';
 import '../features/settings/settings_screen.dart';
 import '../features/todays_lunch/todays_lunch_screen.dart';
+import 'app_state.dart';
+import 'components/destination.dart';
+import 'components/custom_popup_menu.dart';
+import 'components/popup_menu_action.dart';
 import 'components/sign_out_dialog.dart';
 
 class AppScaffold extends StatelessWidget {
