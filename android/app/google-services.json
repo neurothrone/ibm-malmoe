@@ -1,40 +1,76 @@
 {
   "project_info": {
-    "project_number": "90299973757",
-    "project_id": "ibm-malmoe-4166b",
-    "storage_bucket": "ibm-malmoe-4166b.appspot.com"
+    "project_number": "587424333588",
+    "project_id": "ibm-malmoe-30b69",
+    "storage_bucket": "ibm-malmoe-30b69.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:90299973757:android:1084a455da02b15eabb114",
+        "mobilesdk_app_id": "1:587424333588:android:27b3222cbf2d902c214c01",
         "android_client_info": {
-          "package_name": "tech.neurothrone.ibm_malmoe"
+          "package_name": "com.example.test_app_firebase"
         }
       },
       "oauth_client": [
         {
-          "client_id": "90299973757-b0qtraqkii8hvb1f02p64npotcho4q1j.apps.googleusercontent.com",
+          "client_id": "587424333588-dqp8l973sllsstkshsue3cgp0r9os89l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDQ3q9HrFn_EYBInNXEOzBFj8mw2-ApSmg"
+          "current_key": "AIzaSyAKsIChWQj9ERz3DPQuRyxQVFRReq_qWAQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "90299973757-b0qtraqkii8hvb1f02p64npotcho4q1j.apps.googleusercontent.com",
+              "client_id": "587424333588-dqp8l973sllsstkshsue3cgp0r9os89l.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "90299973757-b092p8eo9n8oe2o577k5fsr3dpvl6rkl.apps.googleusercontent.com",
+              "client_id": "587424333588-kq1pipnodt87jt12uvr5t5f4aks32fa1.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "tech.neurothrone.ibmMalmoe"
+                "bundle_id": "com.example.testAppFirebase"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587424333588:android:81dc5ba795edce79214c01",
+        "android_client_info": {
+          "package_name": "tech.neurothrone.ibm_malmoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587424333588-dqp8l973sllsstkshsue3cgp0r9os89l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKsIChWQj9ERz3DPQuRyxQVFRReq_qWAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587424333588-dqp8l973sllsstkshsue3cgp0r9os89l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "587424333588-kq1pipnodt87jt12uvr5t5f4aks32fa1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.testAppFirebase"
               }
             }
           ]
